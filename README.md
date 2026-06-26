@@ -1,43 +1,116 @@
-# Angular contribution
+# MT Dashboard Pro
 
-This project is a template example of a URCap containing a Web frontend and aROS2 Docker backend
+A modern Machine Tending Dashboard URCap developed for Universal Robots PolyScope X.
 
-## Build and Deploy Sample
+---
 
-To build and deploy this sample, use the commands below. A rebuild of the project is required to see any changes made 
-to the source code. If you are deploying the URCap to URSim, ensure that you have started the simulator.
+## Overview
 
-### Dependencies
+MT Dashboard Pro provides a simple and intuitive operator interface for machine tending applications.
 
-Run this command to install the dependencies of the project.
+The dashboard allows operators to monitor robot production directly from the PolyScope X HMI.
 
-```shell
+---
+
+## Features
+
+- Machine Status
+- Robot Status
+- Part Counter
+- Cycle Counter
+- Cycle Time
+- Start Cycle
+- Finish Cycle
+- Reset Counters
+- Responsive PolyScope X Interface
+- Angular Frontend
+- Java Backend
+- URCap SDK v0.20 Compatible
+
+---
+
+## Technology Stack
+
+- Universal Robots PolyScope X SDK
+- Angular
+- TypeScript
+- Java
+- Docker
+- NodeJS
+
+---
+
+## Project Structure
+
+```
+mt-dashboard-pro
+│
+├── mt-dashboard-pro-backend
+├── mt-dashboard-pro-frontend
+├── manifest.yaml
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/nipk1201/mt-dashboard-pro.git
+```
+
+Install dependencies
+
+```bash
 npm install
 ```
 
-### Build
+Package URCap
 
-Run this command to build the contribution type.
-
-```shell
-npm run build
+```bash
+npm run package
 ```
 
-### Installation
+Install URCap
 
-Run this command to install the built URCap to the simulator.
-
-```shell
+```bash
 npm run install-urcap
 ```
 
-Run this command to install the built URCap to the robot.
+---
 
-```shell
-npm run install-urcap -- --host <robot_ip_address>
-````
+## Screenshots
 
+Coming Soon
 
-## Further help
+---
 
-Get more help from the included SDK documentation.
+## Future Improvements
+
+- OPC UA Integration
+- MQTT Connectivity
+- MES Integration
+- Production Reports
+- Alarm History
+- OEE Dashboard
+- SQL Database Logging
+- AI Predictive Maintenance
+
+---
+
+## Author
+
+Nilesh Kekare
+
+Application & Customer Support Engineer
+
+Universal Robots
+
+---
+
+## License
+
+MIT License
