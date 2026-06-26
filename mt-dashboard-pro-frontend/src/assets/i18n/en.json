@@ -1,0 +1,39 @@
+{
+        "application": {
+          "nodes": {
+            "universal-robots-mt-dashboard-pro-machine-tending": {
+              "title": "Machine Tending",
+              "supportiveText": "Machine Tending - Supportive Text"
+              }
+        }
+    },
+        "program": {
+          "tree": {
+            "nodes": {
+              "universal-robots-mt-dashboard-pro-my-pg1": "My Pg1"
+          }
+        }
+      },
+        "program-node-labels": {
+            "my-pg1": {
+                "nodeTitle": "Node Title",
+                "subTitle": "Sub Title - {{ dynamicValue }}"
+            }
+        },
+        "smart-skills": {
+          "universal-robots-mt-dashboard-pro-my-sk1": {
+            "title": "My Sk1"
+            }
+    },
+        "sidebar-items": {
+          "universal-robots-mt-dashboard-pro-my-bar1": {
+            "title": "My Bar1"
+            }
+    },
+        "operator-screen": {
+          "universal-robots-mt-dashboard-pro-my-os1": {
+            "title": "My Os1"
+            }
+        
+    }
+}

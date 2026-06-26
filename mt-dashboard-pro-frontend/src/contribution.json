@@ -1,0 +1,44 @@
+{
+  "applicationNodes": [ 
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "Machine-Tending.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "universal-robots-mt-dashboard-pro-machine-tending"
+    }
+    ],
+  "programNodes": [ 
+    {
+      "excludeFromToolbox": false,
+      "translationPath": "assets/i18n/",
+      "iconURI": "assets/icons/mt-dashboard-pro.svg",
+      "behaviorURI": "my-pg1.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "universal-robots-mt-dashboard-pro-my-pg1"
+    }],
+  "smartSkills": [ 
+    {
+      "name": "universal-robots-mt-dashboard-pro-my-sk1",
+      "iconURI": "assets/icons/mt-dashboard-pro.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "universal-robots-mt-dashboard-pro-my-sk1",
+      "behaviorURI": "my-sk1.worker.js",
+      "translationPath": "assets/i18n/"
+    }],
+  "sidebarItems": [ 
+    {
+      "name": "universal-robots-mt-dashboard-pro-my-bar1",
+      "iconURI": "assets/icons/mt-dashboard-pro.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "universal-robots-mt-dashboard-pro-my-bar1",
+      "behaviorURI": "my-bar1.worker.js",
+      "translationPath": "assets/i18n/"
+    }],
+  "operatorScreens": [ 
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "my-os1.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "universal-robots-mt-dashboard-pro-my-os1"
+    }]
+}

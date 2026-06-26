@@ -1,0 +1,36 @@
+{
+  "name": "mt-dashboard-pro",
+  "version": "0.0.0",
+  "scripts": {
+  "start": "npm run start --prefix mt-dashboard-pro-frontend",
+  "install-frontend": "npm install --prefix mt-dashboard-pro-frontend",
+  "lint": "npm run lint --prefix mt-dashboard-pro-frontend",
+  "build-frontend": "npm run build --prefix mt-dashboard-pro-frontend",
+  "copy-frontend": "ncp 'mt-dashboard-pro-frontend/dist' 'dist'",
+  "write-sbom": "npm run write-sbom-frontend",
+  "write-sbom-frontend": "write-ur-packages ./mt-dashboard-pro-frontend/package-lock.json dist",
+  "install-backend": "npm install --prefix mt-dashboard-pro-backend",
+  "copy-backend": "ncp 'mt-dashboard-pro-backend/dist' dist/mt-dashboard-pro-backend",
+  "build-backend": "npm run build --prefix mt-dashboard-pro-backend",
+  "prebuild": "npm run clean-dist && npm run clean-target && npm run validate-manifest",
+  "build-arm": "export ARCH=linux/arm64 && npm run build",
+  "postinstall": "npm run install-frontend && npm run install-backend",
+  "build": "npm run build-backend && npm run build-frontend",
+  "prepackage": "mkdir dist && npm run copy-backend && npm run copy-frontend && npm run copy-manifest && npm run copy-license && npm run write-sbom",
+  "postbuild": "npm run package",
+  "package": "package-urcap dist target",
+  "copy-manifest": "ncp 'manifest.yaml' 'dist/manifest.yaml'",
+  "copy-license": "ncp 'LICENSE' 'dist/LICENSE'",
+  "clean-dist": "rimraf dist",
+  "clean-target": "rimraf target",
+  "install-urcap": "install-urcap 'target/mt-dashboard-pro*.urcapx' '../manifest-spec-19.10.31.json' --host host.docker.internal --port 45000",
+  "delete-urcap": "delete-urcap universal-robots mt-dashboard-pro",
+  "validate-manifest": "validate-manifest 'manifest.yaml' '../manifest-spec-19.10.31.json'"
+},
+  "private": true,
+  "devDependencies": {
+  "@universal-robots/urcap-utils": "2.1.2",
+  "ncp": "2.0.0",
+  "rimraf": "5.0.7"
+  }
+}

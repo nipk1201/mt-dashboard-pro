@@ -1,0 +1,8 @@
+node_modules/
+dist/
+target/
+
+mt-dashboard-pro-frontend/node_modules/
+mt-dashboard-pro-backend/node_modules/
+
+*.log
