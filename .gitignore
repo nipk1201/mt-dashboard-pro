@@ -1,8 +1,22 @@
-node_modules/
-dist/
-target/
+# Angular
+mt-dashboard-pro-frontend/.angular/
+mt-dashboard-pro-frontend/dist/
 
+# Node
+node_modules/
 mt-dashboard-pro-frontend/node_modules/
 mt-dashboard-pro-backend/node_modules/
 
+# Build
+dist/
+target/
+coverage/
+
+# Logs
 *.log
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
