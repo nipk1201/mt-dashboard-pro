@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { registerSidebarBehavior } from \"@universal-robots/contribution-api\";\nconst behaviors = {\n  factory: () => {\n    return {\n      type: \"universal-robots-mt-dashboard-pro-my-bar1\",\n      version: \"1.0.0\"\n    };\n  }\n};\nregisterSidebarBehavior(behaviors);","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
